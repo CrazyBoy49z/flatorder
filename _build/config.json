@@ -127,6 +127,18 @@
       },
       "systemSettings": [
         {
+            "key": "variant_one",
+            "type": "textfield",
+            "area": "Variants",
+            "value": "Size"
+        },
+        {
+            "key": "variant_two",
+            "type": "textfield",
+            "area": "Variants",
+            "value": "Color"
+        },
+        {
             "key": "sending_subject",
             "type": "textfield",
             "area": "Order Sending",

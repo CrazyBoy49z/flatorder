@@ -4,12 +4,15 @@
 
 ![screenshot](flat-order-screenshot.jpeg)
 
+![screenshot](product-ss.png)
+
 ## Features:
 1. Keeps products in Local Storage not session.
 2. 2 Product Variants (Size & Color) by default.
-3. Confirmation screen (resource).
-4. Email Order Submission, no processing (via snippet > ajax).
-5. Built using KnockoutJS so adding Filtering is easily done.
+3. Product Variants can change thumbnail.
+4. Confirmation screen (resource).
+5. Email Order Submission, no processing (via snippet > ajax).
+6. Built using KnockoutJS so adding Filtering is easily done.
 
 ## Dependencies:
 1. jQuery (CDN called in Template)
@@ -49,5 +52,5 @@ ____
 2. Create a "Catalog" Resource to be the parent of your products. You could have multiple levels, like "Catalog" > "Mens" > "Shirts" if you want.
 3. In the Flat Order System Settings: Adjust "Catalog > Catalog ID" to what you just created.
 4. In the Flat Order System Settings: Adjust "From Name", "Subject", and "TO" Email Address.
-5. Create or Update a Template to use as a "Product Template" and assign the Template Variables for Flat Order.
+5. Create or Update a Template to use as a "Product Template" and assign the Template Variables for Flat Order, *except the 2 "Option" TVs*. The "Option" TVs are used in the "Variants" TV.
 6. Create Products...

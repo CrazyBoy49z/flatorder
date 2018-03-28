@@ -10,6 +10,12 @@
 $output = "";
 $cards = "";
 
+//get Variant Option Names
+$option_one_ss = $modx->getOption('flatorder.variant_one');
+if(!$option_one_ss){$variant_one = 'default';} else {$variant_one = $option_one_ss;}
+$option_two_ss = $modx->getOption('flatorder.variant_two');
+if(!$option_two_ss){$variant_two = 'default two';} else {$variant_two = $option_two_ss;}
+
 //get Product Container ID
 $catalogId = $modx->getOption('id', $scriptProperties);
 if(!$catalogId){return false;}
@@ -44,7 +50,7 @@ foreach($catalog as $product) {
     //default options
     $options = '[{"name":"Title","position":1,"values":["Default Title"]}]';
 
-    if(intval($variantCount) > 2){
+    if(intval($variantCount) > 1){
 
         $optionValues = [];
         foreach($variantArray as $v){
@@ -60,8 +66,8 @@ foreach($catalog as $product) {
         $optionValuesTwo = array_unique($optionValuesTwo);
 
         $options = '[
-            {"name":"'.$modx->getOption('option1_name', $scriptProperties).'","position":1,"values":'.json_encode($optionValues).'},
-            {"name":"'.$modx->getOption('option2_name', $scriptProperties).'","position":2,"values":'.json_encode($optionValuesTwo).'},
+            {"name":"'.$variant_one.'","position":1,"values":'.json_encode($optionValues).'},
+            {"name":"'.$variant_two.'","position":2,"values":'.json_encode($optionValuesTwo).'},
         ]';
     }
 

@@ -14,7 +14,7 @@
 
 [[$fo-product-grid]]
 
-[[$fo-product-card]]
+[[$fo-product-cart]]
 
 
 <script>
@@ -43,7 +43,7 @@ function resetCart(){
 
 </script>
 
-<script src="//ajax.aspnetcdn.com/ajax/knockout/knockout-3.4.2.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
 <script type="text/javascript" src="assets/components/flatorder/js/fo-checkout.js"></script>
 
 </body>
