@@ -48,9 +48,6 @@ ____
    ```
 2. Create a "Catalog" Resource to be the parent of your products. You could have multiple levels, like "Catalog" > "Mens" > "Shirts" if you want.
 3. In the Flat Order System Settings: Adjust "Catalog > Catalog ID" to what you just created.
-4. In the Flat Order System Settings: Adjust "Catalog > Checkout ID" to the resource "Checkout" that was created during install.
-5. In the Flat Order System Settings: Adjust "Catalog > Confirmation ID" to the resource "Confirm Order" that was created during install.
-6. In the Flat Order System Settings: Adjust "Order Sending > Sending ID" to the resource "Send Order" that was created during install.
-7. In the Flat Order System Settings: Adjust "From Name", "Subject", and "TO" Email Address.
-8. Create or Update a Template to use as a "Product Template" and assign the Template Variables for Flat Order.
-9. Create Products...
+4. In the Flat Order System Settings: Adjust "From Name", "Subject", and "TO" Email Address.
+5. Create or Update a Template to use as a "Product Template" and assign the Template Variables for Flat Order.
+6. Create Products...

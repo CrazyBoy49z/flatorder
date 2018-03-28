@@ -3,15 +3,226 @@
   "lowCaseName": "flatorder",
   "description": "Flat Order for MODX",
   "author": "Wayne Roddy",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "package": {
       "elements": {
-
-      }
+          "tvs": [
+            {
+              "caption": "Unique ID",
+              "name": "fo_id",
+              "description": "Override \"FO-\" + Resource ID. Optional.",
+              "type": "text",
+              "sortOrder": 0,
+              "inputProperties": {
+                "allowBlank": 1
+              }
+            },
+            {
+              "caption": "Image",
+              "name": "fo_image",
+              "description": "",
+              "type": "image",
+              "sortOrder": 20
+            },
+            {
+              "caption": "Size",
+              "name": "fo_option1",
+              "description": "",
+              "type": "listbox",
+              "inputOptionValues": "None||Small||Medium||Large||X-Large",
+              "sortOrder": 1,
+              "inputProperties": {
+                "allowBlank": 1
+              }
+            },
+            {
+              "caption": "Color",
+              "name": "fo_option2",
+              "description": "",
+              "type": "listbox",
+              "inputOptionValues": "None||Blue||Red||Green||Orange||Black",
+              "sortOrder": 2,
+              "inputProperties": {
+                "allowBlank": 1
+              }
+            },
+            {
+              "caption": "Product Tags",
+              "name": "fo_tags",
+              "description": "",
+              "type": "tag",
+              "inputOptionValues": "Featured||Sale",
+              "sortOrder": 18,
+              "inputProperties": {
+                "allowBlank": 1
+              }
+            },
+            {
+              "caption": "Product Type",
+              "name": "fo_type",
+              "description": "",
+              "type": "listbox",
+              "inputOptionValues": "None||Apparel||Swag||Hardware",
+              "sortOrder": 15,
+              "inputProperties": {
+                "allowBlank": 1
+              }
+            },
+            {
+              "caption": "Product Variants",
+              "name": "fo_variants",
+              "description": "",
+              "type": "text",
+              "sortOrder": 35,
+              "inputProperties": {
+                "allowBlank": 1
+              }
+            },
+            {
+              "caption": "Vendor",
+              "name": "fo_vendor",
+              "description": "",
+              "type": "listbox",
+              "inputOptionValues": "None||MODX",
+              "sortOrder": 10,
+              "inputProperties": {
+                "allowBlank": 1
+              }
+            }
+          ],
+          "snippets": [
+            {
+              "name": "FlatOrderProductsJson"
+            },
+            {
+              "name": "FlatOrderSend"
+            }
+          ],
+          "chunks": [
+              {
+                "name": "fo-product-json-tpl",
+                "file": "product-json.chunk.tpl"
+              },
+              {
+                "name": "fo-product-grid",
+                "file": "product-grid.chunk.tpl"
+              },
+              {
+                "name": "fo-product-cart",
+                "file": "product-cart.chunk.tpl"
+              }
+          ],
+          "templates": [
+              {
+                  "name": "FO-Checkout",
+                  "file": "checkout.template.tpl",
+                  "icon": "icon-shopping-cart"
+              },
+              {
+                  "name": "FO-Confirmation",
+                  "file": "confirmation.template.tpl",
+                  "icon": "icon-check"
+              }
+          ]
+      },
+      "systemSettings": [
+        {
+            "key": "sending_subject",
+            "type": "textfield",
+            "area": "Order Sending",
+            "value": "MODX Flat Order"
+        },
+        {
+            "key": "sending_name",
+            "type": "textfield",
+            "area": "Order Sending",
+            "value": "MODX"
+        },
+        {
+            "key": "sending_to",
+            "type": "textfield",
+            "area": "Order Sending",
+            "value": "your@email.com"
+        },
+        {
+            "key": "sending_id",
+            "type": "textfield",
+            "area": "Order Sending",
+            "value": "5"
+        },
+        {
+            "key": "catalog_id",
+            "type": "textfield",
+            "area": "Catalog",
+            "value": "2"
+        },
+        {
+            "key": "checkout_id",
+            "type": "textfield",
+            "area": "Catalog",
+            "value": "3"
+        },
+        {
+            "key": "confirmation_id",
+            "type": "textfield",
+            "area": "Catalog",
+            "value": "4"
+        }
+      ],
+      "resources": [
+        {
+            "pagetitle": "Checkout",
+            "longtitle": "",
+            "alias": "flatorder-checkout",
+            "template": "FO-Checkout",
+            "content_type": 1,
+            "isfolder": 0,
+            "published": 1,
+            "hidemenu": 1,
+            "searchable":0,
+            "richtext":0
+        },
+        {
+            "pagetitle": "Confirm Order",
+            "longtitle": "",
+            "alias": "flatorder-confirmation",
+            "template": "FO-Confirmation",
+            "content_type": 1,
+            "isfolder": 0,
+            "published": 1,
+            "hidemenu": 1,
+            "searchable":0,
+            "richtext":0
+        },
+        {
+            "pagetitle": "Send Order",
+            "longtitle": "",
+            "alias": "flatorder-send",
+            "template": 0,
+            "content_type": 1,
+            "isfolder": 0,
+            "published": 1,
+            "hidemenu": 1,
+            "searchable":0,
+            "richtext":0,
+            "cacheable":0,
+            "content": "[[!FlatOrderSend]]"
+        }
+      ]
   },
+  "dependencies": [
+        {
+            "name": "migx",
+            "version": ">=2.0.0"
+        }
+  ],
   "build": {
     "readme": "docs/index.md",
     "license": "docs/license.md",
-    "changelog": "docs/changelog.md"
+    "changelog": "docs/changelog.md",
+    "resolver": {
+      "resolversDir": "resolvers",
+      "after": ["config.php"]
+    }
   }
 }

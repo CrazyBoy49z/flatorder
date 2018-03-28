@@ -166,7 +166,7 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
     'pagetitle' => 'Send Order',
     'alias' => 'flatorder-send',
     'parent' => 0,
-    'content' => '',
+    'content' => '[[!FlatOrderSend]]',
     'context_key' => 'web',
     'class_key' => 'modDocument',
     'longtitle' => '',

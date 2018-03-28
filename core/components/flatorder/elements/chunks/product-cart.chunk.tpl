@@ -16,7 +16,7 @@
 
     <div style="padding:10px 0;text-align:right;">
         <button class="btn-empty" onclick="resetCart()">EMPTY CART</button>
-        <a href="[[~[[++flatorder.checkout_id]]]]" class="btn">CHECKOUT</a>
+        <a href="[[~[[++flatorder.confirmation_id]]]]" class="btn">CHECKOUT</a>
     </div>
-  </div>  
+  </div>
 </div>
