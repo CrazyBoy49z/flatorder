@@ -41,7 +41,7 @@
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+<script src="//ajax.aspnetcdn.com/ajax/knockout/knockout-3.4.2.js"></script>
 <script type="text/html" id="cart-row">
     <tr>
         <td data-label="Product" data-bind="text: name"></td>
@@ -64,7 +64,7 @@
 
         //make email html
         for(var i=0;i<koCart.length; i++){
-            orderHtml += "ID: "+koCart[i]['id']+" Name: "+koCart[i]['name']+"<br><hr>";
+            orderHtml += "ID: "+koCart[i]['id']+" Name: "+koCart[i]['name']+"";
         }
     }
     self.cart = ko.observableArray(koCart);

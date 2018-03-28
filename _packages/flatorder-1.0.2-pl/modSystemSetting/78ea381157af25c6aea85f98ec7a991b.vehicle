@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'flatorder',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '569a730520254ad31f8eba29500f4b33',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '78ea381157af25c6aea85f98ec7a991b',
+  'native_key' => 'flatorder.variant_one',
+  'object' => '{"key":"flatorder.variant_one","value":"Size","xtype":"textfield","namespace":"flatorder","area":"Variant Option One","editedon":null}',
+);

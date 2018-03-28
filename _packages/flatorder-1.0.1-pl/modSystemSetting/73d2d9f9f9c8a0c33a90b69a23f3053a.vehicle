@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'flatorder',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '4e60d92d1d31b7904011fde525ebbd7b',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '73d2d9f9f9c8a0c33a90b69a23f3053a',
+  'native_key' => 'flatorder.sending_name',
+  'object' => '{"key":"flatorder.sending_name","value":"MODX","xtype":"textfield","namespace":"flatorder","area":"Order Sending","editedon":null}',
+);

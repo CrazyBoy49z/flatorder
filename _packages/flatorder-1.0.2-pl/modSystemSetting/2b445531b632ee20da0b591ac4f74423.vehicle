@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'flatorder',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '10560b16f4773ab82f0d5ee94ddc67f9',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '2b445531b632ee20da0b591ac4f74423',
+  'native_key' => 'flatorder.variant_two',
+  'object' => '{"key":"flatorder.variant_two","value":"Color","xtype":"textfield","namespace":"flatorder","area":"Variant Option Two","editedon":null}',
+);

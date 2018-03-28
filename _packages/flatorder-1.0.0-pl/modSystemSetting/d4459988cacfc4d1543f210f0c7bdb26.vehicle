@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'flatorder',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '2e6fa4027038833cd2abccb99c044264',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'd4459988cacfc4d1543f210f0c7bdb26',
+  'native_key' => 'flatorder.sending_id',
+  'object' => '{"key":"flatorder.sending_id","value":"5","xtype":"textfield","namespace":"flatorder","area":"Order Sending","editedon":null}',
+);

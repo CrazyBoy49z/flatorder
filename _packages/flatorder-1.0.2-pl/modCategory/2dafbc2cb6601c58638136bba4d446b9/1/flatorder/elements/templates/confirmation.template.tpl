@@ -64,7 +64,7 @@
 
         //make email html
         for(var i=0;i<koCart.length; i++){
-            orderHtml += "ID: "+koCart[i]['id']+" Name: "+koCart[i]['name']+"<br><hr>";
+            orderHtml += "ID: "+koCart[i]['id']+" Name: "+koCart[i]['name']+"";
         }
     }
     self.cart = ko.observableArray(koCart);

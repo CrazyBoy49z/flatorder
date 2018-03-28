@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'flatorder',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '44033ca21a8de3e72d53b09fc583d895',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'c0b67a15452a62207a63a51bde19df43',
+  'native_key' => 'flatorder.catalog_id',
+  'object' => '{"key":"flatorder.catalog_id","value":"2","xtype":"textfield","namespace":"flatorder","area":"Catalog","editedon":null}',
+);

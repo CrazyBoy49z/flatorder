@@ -1,0 +1,280 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '7a8288bec457da62c24bee5e4763374a' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"fo-product-json-tpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"{\\n    \\"id\\": \\"[[+id]]\\",\\n    \\"title\\":\\"[[+title]]\\",\\n    \\"body_html\\":\\"[[+introtext]]\\",\\n    \\"published_at\\":\\"[[+published]]\\",\\n    \\"vendor\\":\\"[[+vendor]]\\",\\n    \\"product_type\\":\\"[[+type]]\\",\\n    \\"tags\\":[[+tags]],\\n    \\"images\\":[\\n        {\\n            \\"id\\":\\"IMG-[[+id]]\\",\\"src\\":\\"[[+image]]\\"\\n        }\\n    ],\\n    \\"variants\\": [[+variants]],\\n    \\"options\\": [[+options]]\\n},\\n","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"{\\n    \\"id\\": \\"[[+id]]\\",\\n    \\"title\\":\\"[[+title]]\\",\\n    \\"body_html\\":\\"[[+introtext]]\\",\\n    \\"published_at\\":\\"[[+published]]\\",\\n    \\"vendor\\":\\"[[+vendor]]\\",\\n    \\"product_type\\":\\"[[+type]]\\",\\n    \\"tags\\":[[+tags]],\\n    \\"images\\":[\\n        {\\n            \\"id\\":\\"IMG-[[+id]]\\",\\"src\\":\\"[[+image]]\\"\\n        }\\n    ],\\n    \\"variants\\": [[+variants]],\\n    \\"options\\": [[+options]]\\n},\\n"}',
+        'guid' => '48fb68887a38efaf63675172b55e886f',
+        'native_key' => NULL,
+        'signature' => 'f9a45c7059288f00705d31e2736685c5',
+      ),
+      '8dc6371259608c0c17df2a3ab134d048' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"fo-product-grid","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div class=\\"flatorder\\">\\n<div class=\\"container\\">\\n    <div class=\\"cards\\" data-bind=\\"foreach: products\\">\\n        <figure class=\\"card-3\\">\\n            <img data-bind=\\"attr: { src: img, alt: name }\\">\\n            <figcaption>\\n                <strong data-bind=\\"text: name\\"><\\/strong>\\n                <p data-bind=\\"text: desc\\"><\\/p>\\n                <h2><small data-bind=\\"visible: option()[1]\\">Starting at:<\\/small> $<span data-bind=\\"text: price\\"><\\/span><\\/h2>\\n                <label data-bind=\\"text: optname,visible: option()[1]\\"><\\/label>\\n                <select data-bind=\'\\n                    visible: option()[1],\\n                    options: option(),\\n                    optionsCaption: \\"Select...\\",\\n                    value: option(),\\n                    selectedOptions: chosenOptions,\\n                    event:{change: $parent.updatePrice}\\n                    \'><\\/select>\\n                <select data-bind=\'\\n                    visible: option2()[0],\\n                    options: option2(),\\n                    optionsCaption: \\"Select...\\",\\n                    value: option2(),\\n                    selectedOptions: chosenOptions2,\\n                    event:{change: $parent.updatePrice2}\\n                    \'><\\/select>\\n                <input type=\\"number\\" min=\\"1\\" placeholder=\\"1\\" data-bind=\'value: quantity, valueUpdate: \\"afterkeydown\\"\' \\/>\\n                <button class=\\"btn\\" data-bind=\\"click: $parent.addToCart\\">ADD TO CART<\\/button>\\n            <\\/figcaption>\\n        <\\/figure>\\n    <\\/div>\\n<\\/div>\\n<\\/div>\\n","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"<div class=\\"flatorder\\">\\n<div class=\\"container\\">\\n    <div class=\\"cards\\" data-bind=\\"foreach: products\\">\\n        <figure class=\\"card-3\\">\\n            <img data-bind=\\"attr: { src: img, alt: name }\\">\\n            <figcaption>\\n                <strong data-bind=\\"text: name\\"><\\/strong>\\n                <p data-bind=\\"text: desc\\"><\\/p>\\n                <h2><small data-bind=\\"visible: option()[1]\\">Starting at:<\\/small> $<span data-bind=\\"text: price\\"><\\/span><\\/h2>\\n                <label data-bind=\\"text: optname,visible: option()[1]\\"><\\/label>\\n                <select data-bind=\'\\n                    visible: option()[1],\\n                    options: option(),\\n                    optionsCaption: \\"Select...\\",\\n                    value: option(),\\n                    selectedOptions: chosenOptions,\\n                    event:{change: $parent.updatePrice}\\n                    \'><\\/select>\\n                <select data-bind=\'\\n                    visible: option2()[0],\\n                    options: option2(),\\n                    optionsCaption: \\"Select...\\",\\n                    value: option2(),\\n                    selectedOptions: chosenOptions2,\\n                    event:{change: $parent.updatePrice2}\\n                    \'><\\/select>\\n                <input type=\\"number\\" min=\\"1\\" placeholder=\\"1\\" data-bind=\'value: quantity, valueUpdate: \\"afterkeydown\\"\' \\/>\\n                <button class=\\"btn\\" data-bind=\\"click: $parent.addToCart\\">ADD TO CART<\\/button>\\n            <\\/figcaption>\\n        <\\/figure>\\n    <\\/div>\\n<\\/div>\\n<\\/div>\\n"}',
+        'guid' => '70808b445bf68f98cf6ef2ce7a7608f1',
+        'native_key' => NULL,
+        'signature' => 'f09c10784aa6729f2164506ce75511f5',
+      ),
+      'd174bbae9b82cf09f28743f520ccc578' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"fo-product-cart","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div class=\\"flatorder\\">\\n  <div class=\\"container\\">\\n   <table cellspacing=\\"0\\" cellpadding=\\"0\\">\\n        <thead><tr><th>Product<\\/th><th>Price<\\/th><th>Quantity<\\/th><th>Subtotal<\\/th><th><\\/th><\\/tr><\\/thead>\\n        <tbody data-bind=\\"template:{ name: \'cart-row\', foreach: cart}\\"><\\/tbody>\\n        <tfoot>\\n            <tr>\\n                <td colspan=\\"4\\"><\\/td>\\n                <td>\\n                    <strong>TOTAL:<\\/strong>\\n                    $<span data-bind=\'text: grandTotal()\'><\\/span>\\n                <\\/td>\\n            <\\/tr>\\n        <\\/tfoot>\\n    <\\/table>\\n\\n    <div style=\\"padding:10px 0;text-align:right;\\">\\n        <button class=\\"btn-empty\\" onclick=\\"resetCart()\\">EMPTY CART<\\/button>\\n        <a href=\\"[[~[[++flatorder.confirmation_id]]]]\\" class=\\"btn\\">CHECKOUT<\\/a>\\n    <\\/div>\\n  <\\/div>\\n<\\/div>\\n","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"<div class=\\"flatorder\\">\\n  <div class=\\"container\\">\\n   <table cellspacing=\\"0\\" cellpadding=\\"0\\">\\n        <thead><tr><th>Product<\\/th><th>Price<\\/th><th>Quantity<\\/th><th>Subtotal<\\/th><th><\\/th><\\/tr><\\/thead>\\n        <tbody data-bind=\\"template:{ name: \'cart-row\', foreach: cart}\\"><\\/tbody>\\n        <tfoot>\\n            <tr>\\n                <td colspan=\\"4\\"><\\/td>\\n                <td>\\n                    <strong>TOTAL:<\\/strong>\\n                    $<span data-bind=\'text: grandTotal()\'><\\/span>\\n                <\\/td>\\n            <\\/tr>\\n        <\\/tfoot>\\n    <\\/table>\\n\\n    <div style=\\"padding:10px 0;text-align:right;\\">\\n        <button class=\\"btn-empty\\" onclick=\\"resetCart()\\">EMPTY CART<\\/button>\\n        <a href=\\"[[~[[++flatorder.confirmation_id]]]]\\" class=\\"btn\\">CHECKOUT<\\/a>\\n    <\\/div>\\n  <\\/div>\\n<\\/div>\\n"}',
+        'guid' => '3f14e55cca5b8791cb05453942865acb',
+        'native_key' => NULL,
+        'signature' => '4ef062ca5ce276ff1acdb3e4d0da7d75',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      '579d69dc76dfd6294e5d8ff9f66567f6' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"FlatOrderProductsJson","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/* FlatOrder Products Json Feed\\n*  Wayne Roddy March 2018 ( wayne@modx.com )\\n*  Render Json Feed to Control a Product Grid\\n*  Just Supply which Catalog to retrieve\\n*  [[FlatOrderProductsJson? id=`2`]]\\n*  [[FlatOrderProductsJson? id=`[[++flatorder.catalog_id]]`]]\\n*\\/\\n\\n$output = \\"\\";\\n$cards = \\"\\";\\n\\n\\/\\/get Variant Option Names\\n$option_one_ss = $modx->getObject(\'modSystemSetting\', array(\'key\' => \'flatorder.variant_one\'));\\n$variant_one = isset($option_one_ss) ?: $variant_one = \'default\';\\n$option_two_ss = $modx->getObject(\'modSystemSetting\', array(\'key\' => \'flatorder.variant_two\'));\\n$variant_two = isset($option_two_ss) ?: $variant_two = \'default 2\';\\n\\n\\/\\/get Product Container ID\\n$catalogId = $modx->getOption(\'id\', $scriptProperties);\\nif(!$catalogId){return false;}\\n\\n\\/\\/Get Catalog Products except containers and hidden products\\n$catalog = $modx->getCollection(\'modResource\', array(\'published\'=>\'1\',\'hidemenu\'=>\'0\',\'isfolder\'=>\'0\',\'parent\'=>$catalogId,\'class_key\'=>\'modDocument\'));\\n\\nforeach($catalog as $product) {\\n    $image = $product->getTVValue(\'fo_image\');\\n    if(!$image){continue;}\\n\\n    $id = \\"FO-\\".$product->get(\'id\');\\n    $uniqueId = $product->getTVValue(\'fo_id\');\\n    if($uniqueId){$id = $uniqueId;}\\n\\n    $title = $product->get(\'pagetitle\');\\n    $introtext = $product->get(\'introtext\');\\n    $published = $product->get(\'publishedon\');\\n    $vendor = $product->getTVValue(\'fo_vendor\');\\n    $type = $product->getTVValue(\'fo_type\');\\n\\n    $tagsTV = explode(\\",\\",$product->getTVValue(\'fo_tags\'));\\n    $tags = [];\\n    foreach($tagsTV as $t) {\\n        array_push($tags, $t);\\n    }\\n\\n    $variants = $product->getTVValue(\'fo_variants\');\\n    $variantArray = json_decode($variants);\\n    $variantCount = count($variantArray);\\n\\n    \\/\\/default options\\n    $options = \'[{\\"name\\":\\"Title\\",\\"position\\":1,\\"values\\":[\\"Default Title\\"]}]\';\\n\\n    if(intval($variantCount) > 2){\\n\\n        $optionValues = [];\\n        foreach($variantArray as $v){\\n            array_push($optionValues, $v->option1);\\n        }\\n\\n        $optionValuesTwo = [];\\n        foreach($variantArray as $v){\\n            array_push($optionValuesTwo, $v->option2);\\n        }\\n\\n        $optionValues = array_unique($optionValues);\\n        $optionValuesTwo = array_unique($optionValuesTwo);\\n\\n        $options = \'[\\n            {\\"name\\":\\"\'.$variant_one.\'\\",\\"position\\":1,\\"values\\":\'.json_encode($optionValues).\'},\\n            {\\"name\\":\\"\'.$variant_two.\'\\",\\"position\\":2,\\"values\\":\'.json_encode($optionValuesTwo).\'},\\n        ]\';\\n    }\\n\\n    $cards .= $modx->parseChunk(\'fo-product-json-tpl\',array(\\n        \'id\' => $id,\\n        \'title\' => $title,\\n        \'introtext\' => htmlspecialchars($introtext),\\n        \'published\' => $published,\\n        \'vendor\' => $vendor,\\n        \'type\' => $type,\\n        \'tags\' => json_encode($tags),\\n        \'variants\' => $variants,\\n        \'options\' => $options,\\n        \'image\' => $image\\n    ));\\n\\n} \\/\\/ foreach $catalog\\n\\n$cards = rtrim($cards,\\",\\");\\n$output = \'{\\"products\\":[\'.$cards.\']}\';\\nreturn $output;","locked":0,"properties":"a:0:{}","moduleguid":"","static":0,"static_file":"","content":"\\/* FlatOrder Products Json Feed\\n*  Wayne Roddy March 2018 ( wayne@modx.com )\\n*  Render Json Feed to Control a Product Grid\\n*  Just Supply which Catalog to retrieve\\n*  [[FlatOrderProductsJson? id=`2`]]\\n*  [[FlatOrderProductsJson? id=`[[++flatorder.catalog_id]]`]]\\n*\\/\\n\\n$output = \\"\\";\\n$cards = \\"\\";\\n\\n\\/\\/get Variant Option Names\\n$option_one_ss = $modx->getObject(\'modSystemSetting\', array(\'key\' => \'flatorder.variant_one\'));\\n$variant_one = isset($option_one_ss) ?: $variant_one = \'default\';\\n$option_two_ss = $modx->getObject(\'modSystemSetting\', array(\'key\' => \'flatorder.variant_two\'));\\n$variant_two = isset($option_two_ss) ?: $variant_two = \'default 2\';\\n\\n\\/\\/get Product Container ID\\n$catalogId = $modx->getOption(\'id\', $scriptProperties);\\nif(!$catalogId){return false;}\\n\\n\\/\\/Get Catalog Products except containers and hidden products\\n$catalog = $modx->getCollection(\'modResource\', array(\'published\'=>\'1\',\'hidemenu\'=>\'0\',\'isfolder\'=>\'0\',\'parent\'=>$catalogId,\'class_key\'=>\'modDocument\'));\\n\\nforeach($catalog as $product) {\\n    $image = $product->getTVValue(\'fo_image\');\\n    if(!$image){continue;}\\n\\n    $id = \\"FO-\\".$product->get(\'id\');\\n    $uniqueId = $product->getTVValue(\'fo_id\');\\n    if($uniqueId){$id = $uniqueId;}\\n\\n    $title = $product->get(\'pagetitle\');\\n    $introtext = $product->get(\'introtext\');\\n    $published = $product->get(\'publishedon\');\\n    $vendor = $product->getTVValue(\'fo_vendor\');\\n    $type = $product->getTVValue(\'fo_type\');\\n\\n    $tagsTV = explode(\\",\\",$product->getTVValue(\'fo_tags\'));\\n    $tags = [];\\n    foreach($tagsTV as $t) {\\n        array_push($tags, $t);\\n    }\\n\\n    $variants = $product->getTVValue(\'fo_variants\');\\n    $variantArray = json_decode($variants);\\n    $variantCount = count($variantArray);\\n\\n    \\/\\/default options\\n    $options = \'[{\\"name\\":\\"Title\\",\\"position\\":1,\\"values\\":[\\"Default Title\\"]}]\';\\n\\n    if(intval($variantCount) > 2){\\n\\n        $optionValues = [];\\n        foreach($variantArray as $v){\\n            array_push($optionValues, $v->option1);\\n        }\\n\\n        $optionValuesTwo = [];\\n        foreach($variantArray as $v){\\n            array_push($optionValuesTwo, $v->option2);\\n        }\\n\\n        $optionValues = array_unique($optionValues);\\n        $optionValuesTwo = array_unique($optionValuesTwo);\\n\\n        $options = \'[\\n            {\\"name\\":\\"\'.$variant_one.\'\\",\\"position\\":1,\\"values\\":\'.json_encode($optionValues).\'},\\n            {\\"name\\":\\"\'.$variant_two.\'\\",\\"position\\":2,\\"values\\":\'.json_encode($optionValuesTwo).\'},\\n        ]\';\\n    }\\n\\n    $cards .= $modx->parseChunk(\'fo-product-json-tpl\',array(\\n        \'id\' => $id,\\n        \'title\' => $title,\\n        \'introtext\' => htmlspecialchars($introtext),\\n        \'published\' => $published,\\n        \'vendor\' => $vendor,\\n        \'type\' => $type,\\n        \'tags\' => json_encode($tags),\\n        \'variants\' => $variants,\\n        \'options\' => $options,\\n        \'image\' => $image\\n    ));\\n\\n} \\/\\/ foreach $catalog\\n\\n$cards = rtrim($cards,\\",\\");\\n$output = \'{\\"products\\":[\'.$cards.\']}\';\\nreturn $output;"}',
+        'guid' => 'cb4cc9cd792851b05b6ed7e08fe298af',
+        'native_key' => NULL,
+        'signature' => '20c1fa1e12cce2ecd541143abd60d10a',
+      ),
+      '0fa4e046adfd351a59a17fcf3d091406' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"FlatOrderSend","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"$modx->getService(\'mail\', \'mail.modPHPMailer\');\\n$modx->mail->set(modMail::MAIL_BODY,$_POST[\'order\']);\\n$modx->mail->set(modMail::MAIL_FROM, $modx->getOption(\'emailsender\'));\\n$modx->mail->set(modMail::MAIL_FROM_NAME, $modx->getOption(\'flatorder.sending_name\'));\\n$modx->mail->set(modMail::MAIL_SUBJECT, $modx->getOption(\'flatorder.sending_subject\'));\\n$modx->mail->address(\'to\', $modx->getOption(\'flatorder.sending_to\'));\\n\\n$modx->mail->setHTML(true);\\nif (!$modx->mail->send()) {\\n    $modx->log(modX::LOG_LEVEL_ERROR,\'An error occurred while trying to send the email: \'.$modx->mail->mailer->ErrorInfo);\\n    return $modx->mail->mailer->ErrorInfo;\\n} else {\\n    return \\"Order sent!\\";\\n}\\n$modx->mail->reset();","locked":0,"properties":"a:0:{}","moduleguid":"","static":0,"static_file":"","content":"$modx->getService(\'mail\', \'mail.modPHPMailer\');\\n$modx->mail->set(modMail::MAIL_BODY,$_POST[\'order\']);\\n$modx->mail->set(modMail::MAIL_FROM, $modx->getOption(\'emailsender\'));\\n$modx->mail->set(modMail::MAIL_FROM_NAME, $modx->getOption(\'flatorder.sending_name\'));\\n$modx->mail->set(modMail::MAIL_SUBJECT, $modx->getOption(\'flatorder.sending_subject\'));\\n$modx->mail->address(\'to\', $modx->getOption(\'flatorder.sending_to\'));\\n\\n$modx->mail->setHTML(true);\\nif (!$modx->mail->send()) {\\n    $modx->log(modX::LOG_LEVEL_ERROR,\'An error occurred while trying to send the email: \'.$modx->mail->mailer->ErrorInfo);\\n    return $modx->mail->mailer->ErrorInfo;\\n} else {\\n    return \\"Order sent!\\";\\n}\\n$modx->mail->reset();"}',
+        'guid' => 'b3622e598e221ebf70ba048385980155',
+        'native_key' => NULL,
+        'signature' => '199600979c39ab31c916be331bbc7a68',
+      ),
+    ),
+    'Templates' => 
+    array (
+      '8f56c127b50ef33169c5334daac2ddf3' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'templatename',
+        'class' => 'modTemplate',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"templatename":"FO-Checkout","description":"","editor_type":0,"category":0,"icon":"icon-shopping-cart","template_type":0,"content":"<!doctype html>\\n<html lang=\\"en\\">\\n<head>\\n    <title>Order Form Base for MODX<\\/title>\\n    <base href=\\"[[!++site_url]]\\" \\/>\\n    <meta charset=\\"[[++modx_charset]]\\" \\/>\\n    <meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge\\">\\n    <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1, maximum-scale=1\\" \\/>\\n\\n    <link rel=\\"stylesheet\\" href=\\"assets\\/components\\/flatorder\\/css\\/cart.css\\">\\n\\n<\\/head>\\n<body>\\n\\n[[$fo-product-grid]]\\n\\n[[$fo-product-cart]]\\n\\n\\n<script>\\nvar koProducts = [ [[FlatOrderProductsJson? id=`[[++flatorder.catalog_id]]`]] ];\\n\\n<\\/script>\\n<script type=\\"text\\/html\\" id=\\"cart-row\\">\\n    <tr>\\n        <td data-label=\\"Product\\" data-bind=\\"text: name\\"><\\/td>\\n        <td data-label=\\"Price\\">$<span data-bind=\\"text: price\\"><\\/span><\\/td>\\n        <td data-label=\\"Quantity\\" data-bind=\\"text: quantity\\">1<\\/td>\\n        <td data-label=\\"Subtotal\\">$<span data-bind=\\"text: subtotal\\"><\\/span><\\/td>\\n        <td><button class=\\"btn-remove\\" data-bind=\\"click: $parent.removeFromCart\\">REMOVE<\\/button><\\/td>\\n    <\\/tr>\\n<\\/script>\\n\\n<script>\\nfunction resetCart(){\\n    localStorage.removeItem(\'cartStorage\');\\n    var cartId = localStorage.getItem(\'lastCartId\');\\n    localStorage.removeItem(\'lastCartId\');\\n    localStorage.removeItem(\'checkoutUrl\');\\n    localStorage.removeItem(\'carts.\'+cartId);\\n    document.location.reload(true);\\n}\\n\\n<\\/script>\\n\\n<script src=\\"\\/\\/cdnjs.cloudflare.com\\/ajax\\/libs\\/knockout\\/3.4.2\\/knockout-min.js\\"><\\/script>\\n<script type=\\"text\\/javascript\\" src=\\"assets\\/components\\/flatorder\\/js\\/fo-checkout.js\\"><\\/script>\\n\\n<\\/body>\\n<\\/html>\\n","locked":0,"properties":"a:0:{}","static":0,"static_file":""}',
+        'guid' => '092b49b7cb1094da5123138622b29d94',
+        'native_key' => NULL,
+        'signature' => '6a665165a44a9814f9e0fb7afa1cd52b',
+      ),
+      'ee4af0db0bc45fbeae4081415e795a1f' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'templatename',
+        'class' => 'modTemplate',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"templatename":"FO-Confirmation","description":"","editor_type":0,"category":0,"icon":"icon-check","template_type":0,"content":"<!doctype html>\\n<html lang=\\"en\\">\\n<head>\\n    <title>Confirm Order<\\/title>\\n    <base href=\\"[[!++site_url]]\\" \\/>\\n    <meta charset=\\"[[++modx_charset]]\\" \\/>\\n    <meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge\\">\\n    <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1, maximum-scale=1\\" \\/>\\n\\n<link rel=\\"stylesheet\\" href=\\"assets\\/components\\/flatorder\\/css\\/cart.css\\">\\n\\n<\\/head>\\n<body>\\n\\n<div class=\\"flatorder\\">\\n\\n  <div class=\\"container\\" tabindex=\\"0\\">\\n      <table cellspacing=\\"0\\" cellpadding=\\"0\\">\\n          <thead><tr><th>Product<\\/th><th>Price<\\/th><th>Quantity<\\/th><th>Subtotal<\\/th><\\/tr><\\/thead>\\n          <tbody data-bind=\\"template:{ name: \'cart-row\', foreach: cart}\\"><\\/tbody>\\n          <tfoot>\\n              <tr>\\n                  <td colspan=\\"3\\"><\\/td>\\n                  <td>\\n                      <strong>TOTAL:<\\/strong>\\n                      $<span data-bind=\'text: grandTotal()\'><\\/span>\\n                  <\\/td>\\n              <\\/tr>\\n          <\\/tfoot>\\n      <\\/table>\\n    <br><br>\\n\\n    <button class=\\"btn\\" id=\\"fo_sendOrder\\">COMPLETE ORDER<\\/button>\\n\\n    <br>\\n\\n    <div id=\\"fo_response\\"><\\/div>\\n  <\\/div>\\n\\n<\\/div>\\n\\n\\n<script src=\\"\\/\\/ajax.googleapis.com\\/ajax\\/libs\\/jquery\\/2.2.4\\/jquery.min.js\\"><\\/script>\\n<script src=\\"\\/\\/cdnjs.cloudflare.com\\/ajax\\/libs\\/knockout\\/3.4.2\\/knockout-min.js\\"><\\/script>\\n<script type=\\"text\\/html\\" id=\\"cart-row\\">\\n    <tr>\\n        <td data-label=\\"Product\\" data-bind=\\"text: name\\"><\\/td>\\n        <td data-label=\\"Price\\">$<span data-bind=\\"text: price\\"><\\/span><\\/td>\\n        <td data-label=\\"Quantity\\" data-bind=\\"text: quantity\\">1<\\/td>\\n        <td data-label=\\"Subtotal\\">$<span data-bind=\\"text: subtotal\\"><\\/span><\\/td>\\n    <\\/tr>\\n<\\/script>\\n<script type=\\"text\\/javascript\\">\\n    koCart = [];\\n    orderHtml = \\"\\";\\n\\n    function cartModel() {\\n    var self = this;\\n\\n    \\/\\/assign cart array\\n    var ls = localStorage.getItem(\'cartStorage\');\\n    if(ls){\\n        koCart = JSON.parse(localStorage.getItem(\'cartStorage\'));\\n\\n        \\/\\/make email html\\n        for(var i=0;i<koCart.length; i++){\\n            orderHtml += \\"ID: \\"+koCart[i][\'id\']+\\" Name: \\"+koCart[i][\'name\']+\\"\\";\\n        }\\n    }\\n    self.cart = ko.observableArray(koCart);\\n\\n    \\/\\/make grandtotal\\n    self.grandTotal = function() {\\n        var total = 0;\\n        for(var i=0; i<self.cart().length; i++) {\\n    \\t\\ttotal += parseInt(self.cart()[i][\\"price\\"]*self.cart()[i][\\"quantity\\"]);\\n    \\t}\\n        return total;\\n    };\\n\\n}\\n\\nko.applyBindings(new cartModel());\\n\\n$(\'#fo_sendOrder\').on(\'click\', function(){\\n    $.ajax({\\n    \\ttype: \\"POST\\",\\n    \\turl: \\"[[~[[++flatorder.sending_id]]]]\\",\\n    \\tdata: {order: orderHtml}\\n    })\\n  \\t.done(function( msg ) {\\n  \\t\\t$(\\"#fo_response\\").html(msg);\\n  \\t});\\n});\\n<\\/script>\\n\\n<\\/body>\\n<\\/html>\\n","locked":0,"properties":"a:0:{}","static":0,"static_file":""}',
+        'guid' => '85c66d56776bba7f1bad34a39ce81513',
+        'native_key' => NULL,
+        'signature' => 'c3e68b7a9c5ba4c9d6b9bf66cb8c5128',
+      ),
+    ),
+    'TemplateVars' => 
+    array (
+      '408f447fa3f0d0545a9e2b317cc1ab80' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"fo_id","caption":"Unique ID","description":"Override \\"FO-\\" + Resource ID. Optional.","editor_type":0,"category":0,"locked":0,"elements":"","rank":0,"display":"","default_text":"","properties":"a:0:{}","input_properties":"a:1:{s:10:\\"allowBlank\\";i:1;}","output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '11a0e7bc31a85f0a4749c525488c50a4',
+        'native_key' => NULL,
+        'signature' => 'ec6cc0ac81b5ca21cb2d2f12355e68e8',
+      ),
+      'db102597b148ec84738b014228a3ee25' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"image","name":"fo_image","caption":"Image","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":20,"display":"","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => 'a3ae2ff9de4ee4a93ebabecd78ff840d',
+        'native_key' => NULL,
+        'signature' => '63c9d307ab45b1872b81f36a11ae0fff',
+      ),
+      'fc58f6fc5a17c3d7b1ce0f9daffe9da8' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"listbox","name":"fo_option1","caption":"Size","description":"","editor_type":0,"category":0,"locked":0,"elements":"None||Small||Medium||Large||X-Large","rank":1,"display":"","default_text":"","properties":"a:0:{}","input_properties":"a:1:{s:10:\\"allowBlank\\";i:1;}","output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => 'f32d0f4d0d739f2d7f9300faa1487e94',
+        'native_key' => NULL,
+        'signature' => '223cc711ad9a185ec8292a21c5c396fa',
+      ),
+      '8753d94a6936548e018ee8224e0553ce' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"listbox","name":"fo_option2","caption":"Color","description":"","editor_type":0,"category":0,"locked":0,"elements":"None||Blue||Red||Green||Orange||Black","rank":2,"display":"","default_text":"","properties":"a:0:{}","input_properties":"a:1:{s:10:\\"allowBlank\\";i:1;}","output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '89a3ec57606e4d277413ecc7f94cd95d',
+        'native_key' => NULL,
+        'signature' => '2e27e564d994d9736d47f01dc1ea91a8',
+      ),
+      'fa78428c2f85e002e203c3514e5adfbf' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"tag","name":"fo_tags","caption":"Product Tags","description":"","editor_type":0,"category":0,"locked":0,"elements":"Featured||Sale","rank":18,"display":"","default_text":"","properties":"a:0:{}","input_properties":"a:1:{s:10:\\"allowBlank\\";i:1;}","output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => 'fc515c4f6d58fcd62879b99ac4b72608',
+        'native_key' => NULL,
+        'signature' => 'c9c395637f2e4b9f799ec3ef7c9856ae',
+      ),
+      '06f88c85471ec117725f379ea338215c' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"listbox","name":"fo_type","caption":"Product Type","description":"","editor_type":0,"category":0,"locked":0,"elements":"None||Apparel||Swag||Hardware","rank":15,"display":"","default_text":"","properties":"a:0:{}","input_properties":"a:1:{s:10:\\"allowBlank\\";i:1;}","output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '713eecbe0a0deef6f7187595ce0b9cb5',
+        'native_key' => NULL,
+        'signature' => '89daaec711de166be6961785e3a21640',
+      ),
+      'd61dcf010cf5c0d06fb9a72c335d93a0' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"fo_variants","caption":"Product Variants","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":35,"display":"","default_text":"","properties":"a:0:{}","input_properties":"a:1:{s:10:\\"allowBlank\\";i:1;}","output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '2b1c70b40213c8af780d94a8887f3131',
+        'native_key' => NULL,
+        'signature' => '52ce3f1a1920b1daa0a41fd55b52a8d3',
+      ),
+      '855912e2827375597bb01ab1a3dcdfb7' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"listbox","name":"fo_vendor","caption":"Vendor","description":"","editor_type":0,"category":0,"locked":0,"elements":"None||MODX","rank":10,"display":"","default_text":"","properties":"a:0:{}","input_properties":"a:1:{s:10:\\"allowBlank\\";i:1;}","output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => 'a049363264e32cf8d632d2f1a74d33c4',
+        'native_key' => NULL,
+        'signature' => 'f22705352d24eb5cad114ec7fcbb86d7',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'parent',
+        1 => 'category',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'unique_key' => 'name',
+      'preserve_keys' => false,
+      'update_object' => true,
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'PluginEvents' => 
+        array (
+          'preserve_keys' => true,
+          'update_object' => false,
+          'unique_key' => 
+          array (
+            0 => 'pluginid',
+            1 => 'event',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'namespace' => 'flatorder',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"flatorder-1.0.2-pl\\/modCategory\\/2dafbc2cb6601c58638136bba4d446b9\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"flatorder"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"flatorder-1.0.2-pl\\/modCategory\\/2dafbc2cb6601c58638136bba4d446b9\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"flatorder"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flatorder-1.0.2-pl\\/modCategory\\/2dafbc2cb6601c58638136bba4d446b9.gpm.resolve.tv_templates.resolver","type":"php","name":"gpm.resolve.tv_templates"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flatorder-1.0.2-pl\\/modCategory\\/2dafbc2cb6601c58638136bba4d446b9.gpm.resolve.resources.resolver","type":"php","name":"gpm.resolve.resources"}',
+    ),
+    4 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flatorder-1.0.2-pl\\/modCategory\\/2dafbc2cb6601c58638136bba4d446b9.config.resolver","type":"php","name":"config"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '7ef8df158bbbe0ea750cc68860e8efc6',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '2dafbc2cb6601c58638136bba4d446b9',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"FlatOrder","rank":0}',
+);
